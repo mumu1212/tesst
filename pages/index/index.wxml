@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='head'>
+    <!-- 头部轮播图 -->
+    <view class='wxhead'>
+   <swiper class="screen-swiper"autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}"></image>
+  </swiper-item>
+</swiper>
+    </view>
+    <!-- 菜单栏 -->
+    <view class='toplist'>
+      <view class='pro'wx:for="{{barlist}}" wx:key=''>
+        <icon class="{{item.icon}}"></icon>{{item.name}}</view>
+    </view>
+    <!-- 主题字 -->
+    <view class='banner'>
+    <span>专家讲座</span>
+    <span>查看更多</span>
+    </view>
+    <input class='input' type='text' placeholder='请输入文字' bindinput="getinputval"></input>
+    <button class='btn' data-str="12332131321313213" bindtap='sub'>submit</button>
+    <!-- 底部 -->
+    <view class='wxbtm'>
+            <view class='pro' wx:for='{{barlist2}}'wx:key=''>
+            <icon class="{{item.icon}}"></icon>{{item.name}}</view>
+    </view>
+    </view>
+</view>

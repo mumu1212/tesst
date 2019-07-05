@@ -1,0 +1,43 @@
+/**index.wxss**/
+.head{
+    width: 100%;
+}
+/* 菜单栏 */
+.toplist{
+display:flex;
+justify-content: space-around;
+align-items:center; 
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-around;
+}
+.input{
+width: 100%;
+height: 30rpx;
+background-color: white;
+}
+.btn{
+    width: 500rpx;
+    height: 100rpx;
+    background-color: red;
+}
+/* 底部 */
+.wxbtm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.pro{
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+height: 100rpx;
+width:165rpx;
+    padding-right: 10rpx;
+}
