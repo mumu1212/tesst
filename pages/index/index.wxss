@@ -41,3 +41,6 @@ height: 100rpx;
 width:165rpx;
     padding-right: 10rpx;
 }
+.seee{
+    background-color: white;
+}

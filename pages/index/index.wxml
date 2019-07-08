@@ -20,11 +20,12 @@
     <span>查看更多</span>
     </view>
     <input class='input' type='text' placeholder='请输入文字' bindinput="getinputval"></input>
-    <button class='btn' data-str="12332131321313213" bindtap='sub'>submit</button>
+    <button class='btn' bindtap='sub'>submit</button>
     <!-- 底部 -->
     <view class='wxbtm'>
-            <view class='pro' wx:for='{{barlist2}}'wx:key=''>
+            <view class='pro' wx:for='{{barlist2}}' wx:key=''>
             <icon class="{{item.icon}}"></icon>{{item.name}}</view>
     </view>
+    <input class="seee" type='text' bindinput='hh'></input>
     </view>
 </view>

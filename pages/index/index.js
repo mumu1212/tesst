@@ -93,11 +93,16 @@ Page({
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
-      hasUserInfo: true
+        hasUserInfo: true,
     })
   },
   sub(e){
       let number = this.data.sue
-      console.log(number)
-  }
+  },
+    hh:function(can){
+      this.setData({
+          Q:can.detail.value
+        //  hh是绑定输入事件 Q将参数（can是参数）传至后台
+      })
+  },
 })
